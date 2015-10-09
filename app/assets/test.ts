@@ -19,7 +19,7 @@ var run = function(testSuite) {
 /////////////////////////
 
 
-var typeScriptTestSuite = {
+run({
 
   "onePlusOneShouldBe2": function(){
     return [2, 1 + 1];
@@ -33,7 +33,5 @@ var typeScriptTestSuite = {
     return [true, false];
   }
 
-};
-
-run(typeScriptTestSuite);
+});
 
