@@ -5,10 +5,8 @@ import play.api.mvc._
 
 import scala.concurrent.{ ExecutionContext, Future }
 
-object PersonController extends Controller {
+object App extends Controller {
 
-  def index = Action {
-    Ok(views.html.index())
-  }
+  def index = controllers.Assets.versioned(path="/public", file= "index.html")
 
 }
